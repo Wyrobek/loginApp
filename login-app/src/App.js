@@ -13,6 +13,7 @@ function App() {
         <Route path="" exac element={<LoginPage />} />
         <Route exact path="HomePage" element={getToken() ? <HomePage /> : <Navigate to='/' replace />}/>
         <Route path="*" element={<ErrorPage />} />
+        <Route path="/" exac element={<RegistrationPage/>} />
         </Route>
       </Routes>
     </BrowserRouter>
